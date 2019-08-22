@@ -1,0 +1,16 @@
+digraph {
+  A [label="A\n0" penwidth=4];
+  B;
+  C [label="C\n10" penwidth=4];
+  D [label="D\n2" penwidth=4];
+  E [label="E\n2" penwidth=4];
+
+  A -> E [label=2 penwidth=4 color=red]
+  A -> D [label=2 penwidth=4 color=red]
+  B -> A [label=1]
+  B -> E [label=4]
+  B -> D [label=9]
+  C -> D [label=2 style=dotted]
+  D -> C [label=8 penwidth=4 color=red]
+  D -> E [label=3 style=dotted]
+}
